@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #2A0944;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    margin: 11%;
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    letter-spacing: 0.1em;
+}
+
+h2,h3,p {
+    color: white;
+}
+
+h3{
+    margin-top: 50px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.links{
+    margin-top: -10px;
+}
+
+.links__item {
+    display: block;
+    max-width: 400px;
+    margin: 10px auto 15px;
+    margin-bottom: -15px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.links__item .links__wa {
+  border-radius: 25px;
+  border: 2px solid #01e675;
+  background: #01da6d;
+  color: white;
+}
+
+.links__item .links__ig {
+    border-radius: 25px;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: white;
+  }
+
+.links__item .links__wa:hover {
+    background: #07ff83;
+}
+
+.links__item .links__ig:hover {
+    background: -moz-linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%); 
+    background: -webkit-linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%); 
+    background: linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%) ; 
+}
+
+.sosmed {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.sosmed .sosmed__item {
+    flex: 1;
+    margin-right: 5px;
+    transition: transform 0.2s;
+}
+
+.sosmed__item:hover {
+    transform: scale(1.5);
+}
