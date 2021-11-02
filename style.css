@@ -85,19 +85,3 @@ h3 {
     background: -webkit-linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%); 
     background: linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%) ; 
 }
-
-.sosmed {
-    display: flex;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.sosmed .sosmed__item {
-    flex: 1;
-    margin-right: 5px;
-    transition: transform 0.2s;
-}
-
-.sosmed__item:hover {
-    transform: scale(1.5);
-}
