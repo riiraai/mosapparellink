@@ -30,17 +30,22 @@ body {
     letter-spacing: 0.1em;
 }
 
-h2,h3,p {
+h2,h3,p,a {
     color: white;
 }
 
-h3{
+a:hover {
+    transition: all 0.2s ease-in-out;
+    color: #fed766;
+}
+
+h3 {
     margin-top: 50px;
     font-size: 10px;
     font-weight: 500;
 }
 
-.links{
+.links {
     margin-top: -10px;
 }
 
