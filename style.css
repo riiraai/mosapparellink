@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
 
+:root{
+    /* --------- Color --------- */
+        /* Background Color */
+        --bg-color-primary: rgb(42, 9, 68);
+
+        /* Text Color */
+        --text-color: rgb(255, 255, 255);
+        --link-text-color: rgb(254, 215, 102);
+
+        /* Color Gradient */
+        --wa-gradient: linear-gradient(20deg, #179c8d, #25D366);
+        --wa-gradient-hover: linear-gradient(20deg, #17aa99, #29eb70);
+        --ig-gradient: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        --ig-gradient-hover: linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%);
+    /* -------------------------- */
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -12,7 +29,7 @@ html {
 }
 
 body {
-    background-color: #2A0944;
+    background-color: var(--bg-color-primary);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -31,12 +48,12 @@ body {
 }
 
 h2,h3,p,a {
-    color: white;
+    color: var(--text-color);
 }
 
 a:hover {
     transition: all 0.2s ease-in-out;
-    color: #fed766;
+    color: var(--link-text-color);
 }
 
 h3 {
@@ -73,27 +90,23 @@ h3 img {
 
 .links__item .links__wa {
   border-radius: 25px;
-  border: 2px solid #01e675;
-  background: #01da6d;
-  color: white;
+  border: 2px solid var(--wa-gradient);
+  background: var(--wa-gradient);
+  color: var(--text-color);
+}
+
+.links__item .links__wa:hover {
+    background: var(--wa-gradient-hover);
 }
 
 .links__item .links__ig {
     border-radius: 25px;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    color: white;
-  }
-
-.links__item .links__wa:hover {
-    background: #07ff83;
+    background: var(--ig-gradient);
+    color: var(--text-color);
 }
 
 .links__item .links__ig:hover {
-    background: -moz-linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%); 
-    background: -webkit-linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%); 
-    background: linear-gradient(45deg, #ff9e37 0%, #ff7543 25%, #fa2c4b 50%, #f02a79 75%, #eb1faa 100%) ; 
+    background: var(--ig-gradient-hover);
 }
 
 /* Extra small devices (phones, 600px and down) */
