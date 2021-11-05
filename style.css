@@ -45,6 +45,10 @@ h2,h3,p {
     margin: 0 20px;
 }
 
+p {
+    margin-top: 15px;
+}
+
 a {
     color: var(--text-color);
 }
