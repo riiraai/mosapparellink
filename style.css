@@ -29,9 +29,9 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     background-color: var(--bg-color-primary);
     text-align: center;
+    font-family: "Poppins", sans-serif;
     font-weight: 900;
     margin: 6.5% 3% 0;
     max-width: 100%;
@@ -40,9 +40,13 @@ body {
     letter-spacing: 0.1em;
 }
 
-h2,h3,p,a {
+h2,h3,p {
     color: var(--text-color);
     margin: 0 20px;
+}
+
+a {
+    color: var(--text-color);
 }
 
 a:hover {
